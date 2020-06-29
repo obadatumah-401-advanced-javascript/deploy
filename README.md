@@ -8,7 +8,7 @@
 
 ## Links and Resources
 
-[PR](https://github.com/obadatumah-401-advanced-javascript/deploy/pull/3)
+[PR](https://github.com/obadatumah-401-advanced-javascript/deploy/pull/2)
 
 
 ### PORT - 3000
