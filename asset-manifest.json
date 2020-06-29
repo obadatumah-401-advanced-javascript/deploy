@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/obadatumah-401-advanced-javascript/deploy/static/css/main.dc46258e.chunk.css",
-    "main.js": "/obadatumah-401-advanced-javascript/deploy/static/js/main.ec2fcb52.chunk.js",
-    "main.js.map": "/obadatumah-401-advanced-javascript/deploy/static/js/main.ec2fcb52.chunk.js.map",
-    "runtime~main.js": "/obadatumah-401-advanced-javascript/deploy/static/js/runtime~main.d18c96ec.js",
-    "runtime~main.js.map": "/obadatumah-401-advanced-javascript/deploy/static/js/runtime~main.d18c96ec.js.map",
-    "static/js/2.c33245e0.chunk.js": "/obadatumah-401-advanced-javascript/deploy/static/js/2.c33245e0.chunk.js",
-    "static/js/2.c33245e0.chunk.js.map": "/obadatumah-401-advanced-javascript/deploy/static/js/2.c33245e0.chunk.js.map",
-    "index.html": "/obadatumah-401-advanced-javascript/deploy/index.html",
-    "precache-manifest.30e36bb11b02a81f7a3679eec2a5bb4a.js": "/obadatumah-401-advanced-javascript/deploy/precache-manifest.30e36bb11b02a81f7a3679eec2a5bb4a.js",
-    "service-worker.js": "/obadatumah-401-advanced-javascript/deploy/service-worker.js",
-    "static/css/main.dc46258e.chunk.css.map": "/obadatumah-401-advanced-javascript/deploy/static/css/main.dc46258e.chunk.css.map"
+    "main.css": "/deploy/static/css/main.dc46258e.chunk.css",
+    "main.js": "/deploy/static/js/main.ec2fcb52.chunk.js",
+    "main.js.map": "/deploy/static/js/main.ec2fcb52.chunk.js.map",
+    "runtime~main.js": "/deploy/static/js/runtime~main.9c2cdec9.js",
+    "runtime~main.js.map": "/deploy/static/js/runtime~main.9c2cdec9.js.map",
+    "static/js/2.c33245e0.chunk.js": "/deploy/static/js/2.c33245e0.chunk.js",
+    "static/js/2.c33245e0.chunk.js.map": "/deploy/static/js/2.c33245e0.chunk.js.map",
+    "index.html": "/deploy/index.html",
+    "precache-manifest.d7b64def0b67bf68c2e70045f51f0416.js": "/deploy/precache-manifest.d7b64def0b67bf68c2e70045f51f0416.js",
+    "service-worker.js": "/deploy/service-worker.js",
+    "static/css/main.dc46258e.chunk.css.map": "/deploy/static/css/main.dc46258e.chunk.css.map"
   }
 }
