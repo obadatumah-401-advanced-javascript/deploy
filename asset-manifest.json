@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/obadatumah-401-advanced-javascript/deploy/static/css/main.dc46258e.chunk.css",
+    "main.js": "/obadatumah-401-advanced-javascript/deploy/static/js/main.ec2fcb52.chunk.js",
+    "main.js.map": "/obadatumah-401-advanced-javascript/deploy/static/js/main.ec2fcb52.chunk.js.map",
+    "runtime~main.js": "/obadatumah-401-advanced-javascript/deploy/static/js/runtime~main.d18c96ec.js",
+    "runtime~main.js.map": "/obadatumah-401-advanced-javascript/deploy/static/js/runtime~main.d18c96ec.js.map",
+    "static/js/2.c33245e0.chunk.js": "/obadatumah-401-advanced-javascript/deploy/static/js/2.c33245e0.chunk.js",
+    "static/js/2.c33245e0.chunk.js.map": "/obadatumah-401-advanced-javascript/deploy/static/js/2.c33245e0.chunk.js.map",
+    "index.html": "/obadatumah-401-advanced-javascript/deploy/index.html",
+    "precache-manifest.30e36bb11b02a81f7a3679eec2a5bb4a.js": "/obadatumah-401-advanced-javascript/deploy/precache-manifest.30e36bb11b02a81f7a3679eec2a5bb4a.js",
+    "service-worker.js": "/obadatumah-401-advanced-javascript/deploy/service-worker.js",
+    "static/css/main.dc46258e.chunk.css.map": "/obadatumah-401-advanced-javascript/deploy/static/css/main.dc46258e.chunk.css.map"
+  }
+}
