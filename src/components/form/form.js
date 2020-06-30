@@ -1,10 +1,10 @@
 import React from 'react';
-
+import superagent from 'superagent';
 import './form.scss';
 
 class Form extends React.Component {
 
-  constructor(a,b, props) {
+  constructor(props) {
     super(props);
     this.state = {
       url: '',
@@ -16,31 +16,34 @@ class Form extends React.Component {
   handleSubmit = e => {
     e.preventDefault();
 
-    if ( this.state.url && this.state.method ) {
+    let url = '';
+    let method = '';
 
-      // Make an object that would be suitable for superagent
-      let request = {
-        url: this.state.url,
-        method: this.state.method,
-      };
+    let request = {
+      url: this.state.url,
+      method: this.state.method,
+    };
 
-      // Clear old settings
-      let url = '';
-      let method = '';
+    if (this.state.url && this.state.method) {
+      superagent.get(request.url)
+        .then(data => {
+          let people = data.body;
+          let headers = data.headers;
+          this.props.handler(people, headers);
+        });
 
-      this.setState({request, url, method});
+      this.setState({ request, url, method });
       e.target.reset();
-
     }
 
     else {
-      alert('missing information');
+      alert('there is no url OR methods entry ');
     }
   }
 
   handleChangeURL = e => {
     const url = e.target.value;
-    this.setState({url});
+    this.setState({ url });
   };
 
   handleChangeMethod = e => {
@@ -55,7 +58,7 @@ class Form extends React.Component {
           <label >
             <span>URL: </span>
             <input name='url' type='text' onChange={this.handleChangeURL} />
-            <button type="submit">GO!</button>
+            <button type="submit">{this.props.title}</button>
           </label>
           <label className="methods">
             <span className={this.state.method === 'get' ? 'active' : ''} id="get" onClick={this.handleChangeMethod}>GET</span>
