@@ -10,6 +10,7 @@ class Form extends React.Component {
       url: '',
       method: '',
       request: {},
+      historyData:[],
     };
   }
 
@@ -29,6 +30,7 @@ class Form extends React.Component {
         .then(data => {
           let people = data.body;
           let headers = data.headers;
+          localStorage.setItem(`${request.method} in ${request.url}`, JSON.stringify({people,headers}));
           this.props.handler(people, headers);
         });
 
@@ -51,6 +53,19 @@ class Form extends React.Component {
     this.setState({ method });
   };
 
+  localstorage = e =>{
+    var arr=[];
+    for (var i = 0; i < localStorage.length; i++) {
+      var key = localStorage.key(i);
+      var value = localStorage.getItem(key);
+      console.log('Key: ' + key );  
+    arr=this.state.historyData.push(key);
+    }
+    
+    this.setState({arr});
+
+  };
+
   render() {
     return (
       <>
@@ -70,6 +85,9 @@ class Form extends React.Component {
         <section className="results">
           <span className="method">{this.state.request.method}</span>
           <span className="url">{this.state.request.url}</span>
+          <span className="history" onClick={this.localstorage}>History:</span>
+          <span className="local">{this.state.historyData}</span>
+          {/* <Link to='/api' onClick='hello()'>Here</Link> */}
         </section>
       </>
     );
