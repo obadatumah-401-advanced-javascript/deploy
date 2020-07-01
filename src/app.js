@@ -1,19 +1,42 @@
 import React from 'react';
-
+import ReactJson from 'react-json-view'
+import { Switch, Route } from 'react-router-dom';
 import './app.scss';
 
-// Let's talk about using index.js and some other name in the component folder
-// There's pros and cons for each way of doing this ...
+
 import Header from './components/header';
 import Footer from './components/footer';
 import Form from './components/form/form.js';
 
 class App extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      header: [],
+      results: []
+    };
+  }
+  handleForm = (results, header) => {
+    this.setState({ results, header });
+
+  }
+
+
   render() {
     return (
       <React.Fragment>
         <Header />
-        <Form />
+        <Switch>
+          <Route path="/">
+            <Form title="GO" handler={this.handleForm} />
+            <ReactJson src={this.state.header} />
+            <ReactJson src={this.state.results} />
+          </Route>
+          <Route path="/api">
+            <ReactJson src={this.state.results} />
+          </Route>
+        </Switch>
         <Footer />
       </React.Fragment>
     );
