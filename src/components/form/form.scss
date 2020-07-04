@@ -34,6 +34,21 @@ form {
 
   span {
     margin: 1rem;
+    &.local{
+    &:hover {
+      color: red;
+    }
+  }
   }
   
+  
 }
+p{
+  &.history{
+    &:hover {
+      color: blue;
+    }
+
+  }
+}
+

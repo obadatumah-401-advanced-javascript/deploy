@@ -25,3 +25,5 @@
 ### Tests
 
 ### i used react test renderer and enzyme to test three cases.
+
+![Diagram](./assets/api.png)

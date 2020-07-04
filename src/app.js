@@ -35,6 +35,7 @@ class App extends React.Component {
           </Route>
           <Route path="/api">
             <ReactJson src={this.state.results} />
+            <ReactJson src={this.state.header} />
           </Route>
         </Switch>
         <Footer />
